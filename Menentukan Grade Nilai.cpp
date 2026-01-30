@@ -1,15 +1,10 @@
-// === Menentukan Nilai dengan Tabel menggunakan Array
-// === Code by. Fannn
-// === Menggunakan Array 2 Dimensi
-// === [baris][0=nama,1=nilai,2=grade]
-
 // --- Library
 #include <iostream>
-#include <iomanip>   // setw
-#include <limits>    // numeric_limits
+#include <iomanip>
+#include <limits> 
 using namespace std;
 
-// --- Function Menentukan Nilai
+// --- [Function] Menentukan Nilai
 char tentukanGrade(int nilai) {
     if (nilai >= 85) return 'A';
     else if (nilai >= 70) return 'B';
@@ -18,7 +13,7 @@ char tentukanGrade(int nilai) {
     return 'E';
 }
 
-// --- Function Validasi Angka
+// --- [Function] Validasi Angka
 int inputAngka(const string &pesan, int batasMax) {
     int angka;
 
@@ -50,7 +45,7 @@ int inputAngka(const string &pesan, int batasMax) {
     }
 }
 
-// --- Function Utama
+// --- [Function] Utama
 int main() {
     cout << "=== Program Nilai Mahasiswa ===\n\n";
     int n = inputAngka("Masukkan jumlah mahasiswa (max. 20): ", 20);
@@ -63,7 +58,7 @@ int main() {
         cout << "Nama  : ";
         getline(cin, data[i][0]);
         
-        // jika umenekan enter tanpa isi, ulang input
+        // jika menekan enter tanpa isi, ulang input
         if (data[i][0].empty()) {
             cout << "Nama tidak boleh kosong. Masukkan nama ulang.\n";
             --i; // ulangi indeks yang sama
