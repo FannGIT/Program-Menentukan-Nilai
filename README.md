@@ -133,5 +133,3 @@ Mahasiswa | C++ & Algoritma Dasar
 ---
 
 ⭐ Jika repo ini bermanfaat, jangan lupa beri **star**!
-
-```
