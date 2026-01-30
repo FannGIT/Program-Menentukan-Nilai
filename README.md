@@ -70,7 +70,7 @@ kolom:
 
 ### 1️⃣ Compile Program
 ```bash
-g++ nilai_mahasiswa.cpp -o nilai_mahasiswa
+g++ main.cpp -o nilai_mahasiswa
 ````
 
 ### 2️⃣ Jalankan Program
